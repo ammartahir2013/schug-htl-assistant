@@ -1,12 +1,10 @@
 import streamlit as st
 import os
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-
-from langchain.vectorstores import FAISS
-
-from langchain.chains import RetrievalQA
 from langchain_community.document_loaders import PyPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_community.vectorstores import FAISS
+from langchain.chains import RetrievalQA
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 
 st.title("SCHUG HTL Assistent")
